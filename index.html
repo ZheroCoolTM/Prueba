@@ -1,0 +1,59 @@
+<html>
+    <head>
+        
+        <style type="text/css">
+            body{
+                color: white;
+                background-color: black;
+
+            }
+            #seccion1{
+                font-size: 60px;
+                text-align: center;
+                background-image: url(https://cdn.pixabay.com/photo/2016/03/27/18/54/technology-1283624_960_720.jpg);
+                background-size: cover;
+
+            }
+            #proyectos{
+                display: grid;
+                grid-template-columns: auto auto;
+            }
+            .proyecto img{
+                width: 50px;
+            }
+        </style>
+       
+    </head>
+    <body>
+        <section id="seccion1">
+            <h1>Bienvenido</h1> 
+        </section>
+        <section id="proyectos">
+            <div class="proyecto">
+                <p>JavasScript</p>
+                <img src="https://e7.pngegg.com/pngimages/845/479/png-clipart-web-development-javascript-scripting-language-web-browser-java-text-logo.png">
+            </div>
+            <div class="proyecto">
+                <p>JavasScript</p>
+                <img src="https://e7.pngegg.com/pngimages/845/479/png-clipart-web-development-javascript-scripting-language-web-browser-java-text-logo.png">
+            </div>
+        </section>
+        
+    </body>
+    <script>
+        const datos = [{
+            img: "https://e7.pngegg.com/pngimages/845/479/png-clipart-web-development-javascript-scripting-language-web-browser-java-text-logo.png",
+            desc: "JavaScript"
+        },{
+            img: "https://e7.pngegg.com/pngimages/845/479/png-clipart-web-development-javascript-scripting-language-web-browser-java-text-logo.png",
+            desc: "JavaScript" 
+        }]
+        console.log("Hola Mundo");
+        let proyectos = document.querySelector('#proyectos');
+        proyectos.style.background = 'orange' ;
+        let proyecto = document.createElement("BUTTON");
+        proyecto.innerHTML = "Presioname";
+        proyectos.appendChild(proyecto);
+
+    </script>
+</html>
